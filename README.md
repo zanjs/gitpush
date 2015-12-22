@@ -57,4 +57,4 @@ Please request any new feature on the github repository or create a pull request
 
 >如果帮助到您了,请现出你的爱心
 
-![](./images/play.jpg)
+![](http://zanjs.b0.upaiyun.com/image/5/15/4f2118fda98a5b0b09db8937a03e5.jpg)
