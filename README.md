@@ -16,6 +16,13 @@ OK? 自从有了 `gitpush` 一切都简单化了 , 提高了工作效率 ,
 
 老板在也不用看我不停的 `get` 提交啦
 
+
+
+fuck  `git add . `， `git commit 'xxx' `, `git push` 
+
+Quick `gitpush` Everything is simplified,Improve work efficiency,
+
+
 ## Installation
 
 ```sh
