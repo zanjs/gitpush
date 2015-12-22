@@ -52,3 +52,9 @@ The command will output all the modified files added and then output whether com
  Works on all platforms with git installed.
 
 Please request any new feature on the github repository or create a pull request that adds new features.
+
+### Donate
+
+>如果帮助到您了,请现出你的爱心
+
+![捐赠支付宝](./images/play.jpg)
