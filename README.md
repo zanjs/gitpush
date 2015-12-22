@@ -32,6 +32,8 @@ $ npm install gitpush -g
 ## Usage
 全局安装 gitpush 后 , 打开您的终端，定位到您的项目根目录
 
+>一定要项目初始化完成后使用哦
+
 
 After installing the module globally, 
 open up your terminal, navigate to the git directory of your choice and type:
