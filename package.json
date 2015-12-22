@@ -1,0 +1,28 @@
+{
+    "name": "gitpush",
+    "version": "0.0.1",
+    "description": "A command line utility to Git Add all modified files and commit them.",
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zanjs/gitpush.git"
+    },
+    "preferGlobal": "true",
+    "bin": { "gitpush": "index.js" },
+    "keywords": [
+      "shell",
+      "spawn",
+      "process",
+      "git",
+      "commit",
+      "github",
+      "cmd"
+    ],
+    "author": "Julaud",
+    "license": "ISC",
+    "engines": { "node": "*" },
+    "dependencies": { "chalk": "latest" }
+}
+
