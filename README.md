@@ -3,6 +3,9 @@
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。
 
+- 自动 git add .
+- 自动 git commit -m "xxx"
+- 自动 git push  
 
 A command line script in nodeJs to perform various Git commands. 
 The command gives output of git status, 
@@ -51,6 +54,6 @@ $ gitpush          \\ Commit is use Time now
 
 ### Donate
 
->如果帮助到您了,请现出你的爱心
+>如果帮助到您了,请献出你的爱心
 
 ![](http://zanjs.b0.upaiyun.com/image/5/15/4f2118fda98a5b0b09db8937a03e5.jpg)
