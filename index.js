@@ -1,4 +1,3 @@
-#! /usr/bin/env node
 var chalk = require('chalk');
 var test = require('child_process').exec;
 
