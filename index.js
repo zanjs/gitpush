@@ -39,7 +39,13 @@ function autogit(commitMsg) {
     add.on('close', function(){
       var commit = spawn('git', ['commit', '-m', commitMsg]);
       commit.on('close', function(){
-        console.log(chalk.green.bold('Commit Successful'));
+        console.log(chalk.green.bold('git commit ok'));
+        
+        var push = spawn('git', ['push']);
+        push.on('close', function(){
+           console.log(chalk.green.bold('git push ok'));
+        });
+        
       });
     });  
   });  
