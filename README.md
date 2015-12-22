@@ -3,7 +3,7 @@
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。
 
-- 自动 git add .
+- 自动 git add . or -u -v
 - 自动 git commit -m "xxx"
 - 自动 git push  
 

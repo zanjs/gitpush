@@ -29,8 +29,8 @@ function autogit(commitMsg) {
   });
 
   status.on('close', function(){
-    var add = spawn('git', ['add', '-u', '-v']);
-
+    //var add = spawn('git', ['add', '-u', '-v']);
+    var add = spawn('git', ['add', '.']);
     add.stdout.on('data', function(data){
       console.log(chalk.blue(data.toString()));
     });
