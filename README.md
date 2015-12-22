@@ -57,4 +57,4 @@ Please request any new feature on the github repository or create a pull request
 
 >如果帮助到您了,请现出你的爱心
 
-![捐赠支付宝](./images/play.jpg)
+![](./images/play.jpg)
