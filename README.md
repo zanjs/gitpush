@@ -17,7 +17,7 @@ followed by git add all new modified files, and then commits them.
 
 OK? 自从有了 `gitpush` 一切都简单化了 , 提高了工作效率 , 
 
-老板再也不用看我不停的 `git` 提交啦
+老板再也不用看我不停的 `git` 提交啦,开心···
 
 
 
