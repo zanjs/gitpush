@@ -56,4 +56,4 @@ $ gitpush          \\ Commit is use Time now
 
 >如果帮助到您了,请献出你的爱心
 
-![](http://zanjs.b0.upaiyun.com/image/5/15/4f2118fda98a5b0b09db8937a03e5.jpg)
+![](./images/play.jpg)
