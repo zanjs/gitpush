@@ -1,3 +1,4 @@
+
 # gitpush
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。
@@ -6,6 +7,14 @@ Git 命令行实用程序,将所有修改过的文件并提交它们。
 A command line script in nodeJs to perform various Git commands. 
 The command gives output of git status, 
 followed by git add all new modified files, and then commits them.
+
+## help you
+
+还在厌倦 `git add . `， `git commit 'xxx' `, `git push` 
+
+OK? 自从有了 `gitpush` 一切都简单化了 , 提高了工作效率 , 
+
+老板在也不用看我不停的 `get` 提交啦
 
 ## Installation
 
