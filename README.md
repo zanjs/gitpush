@@ -17,6 +17,10 @@ After installing the module globally,
 open up your terminal, navigate to the git directory of your choice and type:
 ```sh
 $ gitpush "Your Commit Message"
+
+//or
+
+$ gitpush            --> is use Time now
 ```
 
 ### Important
