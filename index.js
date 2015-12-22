@@ -37,7 +37,7 @@ function autogit(commitMsg) {
     });
 
     add.on('close', function(){
-      var commit = spawn('git', ['commit', '-m', commitMsg]);
+      var commit = spawn('git', ['commit', '-m', commitMsg+' By gitpush']);
       commit.on('close', function(){
         console.log(chalk.green.bold('git commit ok'));
         
