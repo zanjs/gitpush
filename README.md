@@ -52,6 +52,10 @@ $ gitpush          \\ Commit is use Time now
 
 命令将输出所有修改的文件，输出与提交, 工作在git 所有环境下
 
+### demo 
+
+![](./images/gitpush.gif)
+
 ### Donate
 
 >如果帮助到您了,请献出你的爱心
