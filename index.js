@@ -22,7 +22,7 @@ function autogit(commitMsg) {
   var spawn = require('child_process').spawn;
   var st,sTime;
   
-  sTime = new Date();
+  sTime = new Date().getTime();
   console.log(sTime);
   
   console.time("push-time");
