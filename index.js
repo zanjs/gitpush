@@ -24,7 +24,7 @@ function autogit(commitMsg) {
   
   sTime = new Date().getTime();
   console.log(new Date()+'\nstart || 开始执行...');  
-  console.time("push-time");
+  //console.time("push-time");
   var status = spawn('git', ['status', '-s', '-uno']);
 
   status.stdout.on('data', function(data){
@@ -48,7 +48,7 @@ function autogit(commitMsg) {
         
         var push = spawn('git', ['push']);
         push.on('close', function(){
-           console.timeEnd("push-time");
+           //console.timeEnd("push-time");
            var eTime = new Date().getTime(),
                useTime = eTime - sTime;              
            console.log(chalk.green.bold('git push ok || time cost: '+useTime +'ms'));
