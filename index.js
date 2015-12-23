@@ -25,7 +25,7 @@ function autogit(commitMsg) {
   sTime = new Date();
   console.log(sTime);
   
-  console.time("sTime");
+  console.time("push-time");
   var status = spawn('git', ['status', '-s', '-uno']);
 
   status.stdout.on('data', function(data){
@@ -49,7 +49,7 @@ function autogit(commitMsg) {
         
         var push = spawn('git', ['push']);
         push.on('close', function(){
-           console.timeEnd("sTime");
+           console.timeEnd("push-time");
            console.log(chalk.green.bold('git push ok'));
         });
         
