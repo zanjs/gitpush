@@ -44,14 +44,14 @@ function autogit(commitMsg) {
     add.on('close', function(){
       var commit = spawn('git', ['commit', '-m', commitMsg+' By gitpush']);
       commit.on('close', function(){
-        console.log(chalk.green.bold('git commit ok || 正在提交到远程仓库 loading push...'));
+        console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
         
         var push = spawn('git', ['push']);
         push.on('close', function(){
            //console.timeEnd("push-time");
            var eTime = new Date().getTime(),
                useTime = eTime - sTime;              
-           console.log(chalk.green.bold('git push ok || time cost: '+useTime +'ms'));
+           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms'));
         });
         
       });
