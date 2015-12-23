@@ -54,7 +54,7 @@ $ gitpush          \\ Commit is use Time now
 
 ### demo 
 
-![](./images/gitpush.gif)
+![](./images/gitpush2.gif)
 
 ### Donate
 
