@@ -23,8 +23,7 @@ function autogit(commitMsg) {
   var st,sTime;
   
   sTime = new Date().getTime();
-  console.log(sTime);
-  
+  console.log(new Date()+'\n 开始执行');  
   console.time("push-time");
   var status = spawn('git', ['status', '-s', '-uno']);
 
@@ -51,9 +50,8 @@ function autogit(commitMsg) {
         push.on('close', function(){
            console.timeEnd("push-time");
            var eTime = new Date().getTime(),
-               useTime = eTime - sTime;
-               console.log(useTime);
-           console.log(chalk.green.bold('git push ok'));
+               useTime = eTime - sTime;              
+           console.log(chalk.green.bold('git push ok || time cost'+useTime +'ms'));
         });
         
       });
