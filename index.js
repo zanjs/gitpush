@@ -50,6 +50,9 @@ function autogit(commitMsg) {
         var push = spawn('git', ['push']);
         push.on('close', function(){
            console.timeEnd("push-time");
+           var eTime = new Date().getTime(),
+               useTime = eTime - sTime;
+               console.log(useTime);
            console.log(chalk.green.bold('git push ok'));
         });
         
