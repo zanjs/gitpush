@@ -51,7 +51,7 @@ function autogit(commitMsg) {
            //console.timeEnd("push-time");
            var eTime = new Date().getTime(),
                useTime = eTime - sTime;              
-           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms'));
+           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：成功推送 || 耗时 '+ useTime/1000 +'秒'));
         });
         
       });
