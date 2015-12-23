@@ -8,6 +8,9 @@ var check = test('git add -u -n', function(err, stdout, stderr){
     argvtest();
 });
 
+
+
+
 function argvtest() {
   var commitMsg = process.argv[2];    
   if(!commitMsg)
@@ -17,8 +20,12 @@ function argvtest() {
 
 function autogit(commitMsg) {
   var spawn = require('child_process').spawn;
-  var st;
-
+  var st,sTime;
+  
+  sTime = new Date();
+  console.log(sTime);
+  
+  console.time("sTime");
   var status = spawn('git', ['status', '-s', '-uno']);
 
   status.stdout.on('data', function(data){
@@ -42,6 +49,7 @@ function autogit(commitMsg) {
         
         var push = spawn('git', ['push']);
         push.on('close', function(){
+           console.timeEnd("sTime");
            console.log(chalk.green.bold('git push ok'));
         });
         
