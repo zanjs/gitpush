@@ -4,7 +4,8 @@ var test = require('child_process').exec;
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
     console.log(chalk.red.bold('No Files Modified.'));
-  else
+    
+
     argvtest();
 });
 
