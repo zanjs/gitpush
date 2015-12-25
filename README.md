@@ -48,6 +48,14 @@ $ gitpush "Your Commit Message"
 $ gitpush          \\ Commit is use Time now
 ```
 
+
+## gitpush not push
+
+>git push --set-upstream origin gh-pages
+
+设置您默认提交的分支
+
+
 ### Important
 
 命令将输出所有修改的文件，输出与提交, 工作在git 所有环境下

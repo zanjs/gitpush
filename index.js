@@ -48,6 +48,11 @@ function autogit(commitMsg) {
         console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
         
         var push = spawn('git', ['push']);
+        
+        push.stdout.on('data', function(data){
+          console.log(chalk.blue(data.toString()));
+        });
+        
         push.on('close', function(){
            //console.timeEnd("push-time");
            var eTime = new Date().getTime(),
