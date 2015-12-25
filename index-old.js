@@ -1,19 +1,5 @@
 var chalk = require('chalk');
 var test = require('child_process').exec;
-var fs = require('fs');
-var path = require('path');
-
-var pkg = require('./package');
-var versions = pkg.version;
-var program = require('commander');
-
-if (process.argv[2] && process.argv[2] === '-v') {
-    process.argv[2] = '-V';
-}
-
-
-program
-    .version(versions);
 
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
