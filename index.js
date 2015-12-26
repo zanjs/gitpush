@@ -61,29 +61,25 @@ function autogit(commitMsg) {
           console.log(chalk.blue(data.toString()));
         });
         
+        var isok = true;
+        
         push.stderr.on('data', function(data){
             var stc = data.toString();
             console.log('stderr:'+chalk.blue(stc));
             if(stc == 'Everything up-to-date'){
-                push.on('close', function(){
-                     
-                     
-                     return;
-                    
-                })
-            }else{
-                push.on('close', function(){
-                //console.timeEnd("push-time");
-                var eTime = new Date().getTime(),
-                    useTime = eTime - sTime;              
-                console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：成功推送 || 耗时 '+ useTime/1000 +'秒'));
-                });
+                isok = false;
             }
           
         });
         
         
-        
+        push.on('close', function(){
+           //console.timeEnd("push-time");
+           if(!isok) return;
+           var eTime = new Date().getTime(),
+               useTime = eTime - sTime;              
+           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：成功推送 || 耗时 '+ useTime/1000 +'秒'));
+        });
         
       });
     });  
