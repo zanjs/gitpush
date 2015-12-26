@@ -66,7 +66,7 @@ $ gitpush          \\ Commit is use Time now
 
 ### 开发日志
 
-[](https://github.com/zanjs/gitpush/blob/master/up.md)
+https://github.com/zanjs/gitpush/blob/master/up.md
 
 ### Donate
 
