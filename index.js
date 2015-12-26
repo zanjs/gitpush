@@ -77,7 +77,7 @@ function autogit(commitMsg) {
         push.on('close', function(){
            //console.timeEnd("push-time");
            if(isok == false) return;
-           console.log(isok);
+          
            var eTime = new Date().getTime(),
                useTime = eTime - sTime;              
            console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：成功推送 || 耗时 '+ useTime/1000 +'秒'));
