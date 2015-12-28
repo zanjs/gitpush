@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 var pkg = require('./package');
-var versions = pkg.version;
+var versions = require('./package').version;
 var program = require('commander');
 
 if (process.argv[2] && process.argv[2] === '-v') {
