@@ -1,4 +1,3 @@
-
 # gitpush
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自动化,
@@ -63,6 +62,11 @@ $ gitpush          \\ Commit is use Time now
 ### demo 
 
 ![](./images/gitpush2.gif)
+
+
+### 开发日志
+
+https://github.com/zanjs/gitpush/blob/master/up.md
 
 ### Donate
 
