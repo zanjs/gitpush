@@ -1,13 +1,7 @@
 var chalk = require('chalk');
 var test = require('child_process').exec;
 
-<<<<<<< HEAD
-var pkg = require('./package');
-var versions = require('./package').version;
-var program = require('commander');
-=======
 
->>>>>>> origin/master
 
 if (process.argv[2] && process.argv[2] === '-v') {
     process.argv[2] = '-V';
