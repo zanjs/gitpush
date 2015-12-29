@@ -65,7 +65,7 @@ function autogit(commitMsg) {
         
         push.stderr.on('data', function(data){
             var stc = data.toString();
-            console.log('stderr:'+chalk.blue(stc));
+            console.log('[stderr]♣♣:'+chalk.blue(stc));
             if(stc == 'Everything up-to-date'){
                 console.log('isok ='+ false);
                 isok = false;
@@ -80,7 +80,7 @@ function autogit(commitMsg) {
           
            var eTime = new Date().getTime(),
                useTime = eTime - sTime;              
-           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：推送完成 || 耗时 '+ useTime/1000 +'秒\n更多信息请看上面蓝色信息提示'));
+           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：推送完成 || 耗时 '+ useTime/1000 +'秒\n更多信息请看上面stderr:信息提示'));
         });
         
       });
