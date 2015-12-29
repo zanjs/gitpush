@@ -80,7 +80,7 @@ function autogit(commitMsg) {
           
            var eTime = new Date().getTime(),
                useTime = eTime - sTime;              
-           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：成功推送 || 耗时 '+ useTime/1000 +'秒'));
+           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：推送完成 || 耗时 '+ useTime/1000 +'秒\n更多信息请看上面蓝色信息提示'));
         });
         
       });
