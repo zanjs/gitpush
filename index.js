@@ -7,7 +7,7 @@ if (process.argv[2] && process.argv[2] === '-v') {
     process.argv[2] = '-V';
 }
 
- 
+
 
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
