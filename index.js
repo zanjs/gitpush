@@ -33,7 +33,7 @@ function autogit(commitMsg) {
   
   sTime = new Date().getTime();
   console.log(new Date()+'\nstart || 开始执行...');  
-  //console.time("push-time");
+ 
   var status = spawn('git', ['status', '-s', '-uno']);
 
   status.stdout.on('data', function(data){
