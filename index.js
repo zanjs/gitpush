@@ -2,13 +2,6 @@ var chalk = require('chalk');
 var test = require('child_process').exec;
 
 
-
-if (process.argv[2] && process.argv[2] === '-v') {
-    process.argv[2] = '-V';
-}
-
-
-
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
     console.log(chalk.red.bold('No Files Modified.'));
