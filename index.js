@@ -2,11 +2,12 @@ var chalk = require('chalk');
 var test = require('child_process').exec;
 
 var emoji = require('./js/emoji').emoji,
-    emojiLenth = emoji.length;
+    emojiLenth = emoji.length,
+    randomNum = GetRandomNum(0,emojiLenth);
 
 
-console.log(emojiLenth);
 
+console.log(randomNum);
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
     console.log(chalk.red.bold('No Files Modified.'));
@@ -15,7 +16,11 @@ var check = test('git add -u -n', function(err, stdout, stderr){
     argvtest();
 });
 
-
+function GetRandomNum(Min,Max){
+  var Range = Max - Min;
+  var Rand = Math.random();
+  return(Min + Math.round(Rand * Range));
+}
 
 
 function argvtest() {
