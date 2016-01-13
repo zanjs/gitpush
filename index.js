@@ -3,11 +3,12 @@ var test = require('child_process').exec;
 
 var emoji = require('./js/emoji').emoji,
     emojiLenth = emoji.length,
-    randomNum = GetRandomNum(0,emojiLenth);
+    randomNum = GetRandomNum(0,emojiLenth),
+    emojiUI = emoji[randomNum];
 
 
 
-console.log(randomNum);
+console.log(emojiUI);
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
     console.log(chalk.red.bold('No Files Modified.'));
