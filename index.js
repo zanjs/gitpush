@@ -8,7 +8,7 @@ var emoji = require('./js/emoji').emoji,
 
 
 
-console.log(emojiUI);
+
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
     console.log(chalk.red.bold('No Files Modified.'));
