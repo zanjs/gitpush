@@ -196,4 +196,4 @@ var emoji = [
 
 
 
-exports.emoji = function () { return emoji; }
+exports.emoji = emoji;
