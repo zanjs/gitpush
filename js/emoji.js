@@ -193,3 +193,7 @@ var emoji = [
   ':suspect:',
   ':trollface:'
 ]
+
+
+
+exports.emoji = function () { return emoji; }
