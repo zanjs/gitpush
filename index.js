@@ -4,7 +4,7 @@ var test = require('child_process').exec;
 var emoji = require('./js/emoji');
 
 
-console.log(emoji.emoji[0]);
+console.log(emoji.emoji.length);
 
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
