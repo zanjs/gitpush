@@ -1,10 +1,10 @@
 var chalk = require('chalk');
 var test = require('child_process').exec;
 
-var emoji = require('./js/emoji');
+require('./js/emoji');
 
 
-console.log(emoji[0]);
+console.log(require('./js/emoji'));
 
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
