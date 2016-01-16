@@ -1,6 +1,6 @@
 # gitpush
 
-Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自动化,
+Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自动化, commit 添加 emoji 表情
 
 - 自动 git add . or -u -v
 - 自动 git commit -m "xxx"
@@ -9,6 +9,13 @@ Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自�
 A command line script in nodeJs to perform various Git commands. 
 The command gives output of git status, 
 followed by git add all new modified files, and then commits them.
+
+
+## commit show
+
+![](./images/commit-show.png)
+
+
 
 ## help you
 
