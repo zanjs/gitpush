@@ -79,4 +79,3 @@ https://github.com/zanjs/gitpush/blob/master/up.md
 
 >如果帮助到您了,扫一扫更健康
 
-![](./images/play.jpg)
