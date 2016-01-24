@@ -192,7 +192,6 @@ var emoji = [
   ':rage4:',
   ':suspect:',
   ':trollface:',
-
   ':sunny:',
   ':umbrella:',
   ':cloud:',
