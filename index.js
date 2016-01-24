@@ -54,7 +54,7 @@ function autogit(commitMsg) {
     });
 
     add.on('close', function(){
-      var commit = spawn('git', ['commit', '-m',emojiUI + ' - ' + commitMsg +' By gitpush']);
+      var commit = spawn('git', ['commit', '-m',emojiUI + ' - ' + commitMsg +' from gitpush']);
       commit.on('close', function(){
         console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
 
