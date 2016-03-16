@@ -2,8 +2,10 @@ var chalk = require('chalk');
 var test = require('child_process').exec;
 
 var emoji = require('./js/emoji').emoji,
+    commit = require('./js/commit').commit,
     emojiLenth = emoji.length,
     randomNum = GetRandomNum(0,emojiLenth),
+    commitUI = GetRandomNum(0,commit.length),
     emojiUI = emoji[randomNum];
 
 
@@ -26,7 +28,7 @@ function GetRandomNum(Min,Max){
 function argvtest() {
   var commitMsg = process.argv[2];
   if(!commitMsg)
-    commitMsg = new Date();
+    commitMsg = commitUI;
  autogit(commitMsg);
 }
 
