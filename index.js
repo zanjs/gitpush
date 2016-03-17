@@ -5,7 +5,7 @@ var emoji = require('./js/emoji').emoji,
     commit = require('./js/commit').commit,
     emojiLenth = emoji.length,
     randomNum = GetRandomNum(0,emojiLenth),
-    commitUI = GetRandomNum(0,commit.length),
+    commitUI = commit[GetRandomNum(0,commit.length)],
     emojiUI = emoji[randomNum];
 
 
