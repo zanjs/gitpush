@@ -56,39 +56,40 @@ function autogit(commitMsg) {
     });
 
     add.on('close', function(){
-      var commit = spawn('git', ['commit', '-m',emojiUI + ' - ' + commitMsg +' from gitpush']);
-      commit.on('close', function(){
-        console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
+            
+                    var commit = spawn('git', ['commit', '-m', commitMsg + ' - ' + emojiUI ]);
+                    commit.on('close', function(){
+                            console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
 
-        var push = spawn('git', ['push']);
+                            var push = spawn('git', ['push']);
 
-        push.stdout.on('data', function(data){
-          console.log(chalk.blue(data.toString()));
-        });
+                            push.stdout.on('data', function(data){
+                            console.log(chalk.blue(data.toString()));
+                            });
 
-        var isok = true;
+                            var isok = true;
 
-        push.stderr.on('data', function(data){
-            var stc = data.toString();
-            console.log('[stderr]♣♣:'+chalk.blue(stc));
-            if(stc == 'Everything up-to-date'){
-                console.log('isok ='+ false);
-                isok = false;
-            }
+                            push.stderr.on('data', function(data){
+                                var stc = data.toString();
+                                console.log('[stderr]♣♣:'+chalk.blue(stc));
+                                if(stc == 'Everything up-to-date'){
+                                    console.log('isok ='+ false);
+                                    isok = false;
+                                }
 
-        });
+                            });
 
 
-        push.on('close', function(){
-           //console.timeEnd("push-time");
-           if(isok == false) return;
+                            push.on('close', function(){
+                            //console.timeEnd("push-time");
+                            if(isok == false) return;
 
-           var eTime = new Date().getTime(),
-               useTime = eTime - sTime;
-           console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：推送完成 || 耗时 '+ useTime/1000 +'秒\n更多信息请看上面stderr:信息提示'));
-        });
+                            var eTime = new Date().getTime(),
+                                useTime = eTime - sTime;
+                            console.log(chalk.green.bold('git push ok \n time cost: '+useTime +'ms\n恭喜您：推送完成 || 耗时 '+ useTime/1000 +'秒\n更多信息请看上面stderr:信息提示'));
+                            });
 
-      });
+                    });
     });
   });
 }
