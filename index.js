@@ -26,7 +26,19 @@ function GetRandomNum(Min,Max){
 
 
 function argvtest() {
-  var commitMsg = process.argv[2];
+  var commitMsg = process.argv[2].trim();
+  
+  
+//   console.log(commitMsg);
+
+// var fstr = commitMsg.substr(0,1);
+//                      if(fstr != "#"){
+//                          commitMsg = commitMsg + emojiUI
+//                      } 
+//                      console.log(fstr);
+//                      console.log(commitMsg);
+
+//   return false;
   if(!commitMsg)
     commitMsg = commitUI;
  autogit(commitMsg);
@@ -56,8 +68,13 @@ function autogit(commitMsg) {
     });
 
     add.on('close', function(){
-            
-                    var commit = spawn('git', ['commit', '-m', commitMsg + ' - ' + emojiUI ]);
+        
+                     var fstr = commitMsg.substr(0,1);
+                     if(fstr != "#"){
+                         commitMsg = commitMsg + emojiUI
+                     } 
+                                 
+                    var commit = spawn('git', ['commit', '-m', commitMsg]);
                     commit.on('close', function(){
                             console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
 
