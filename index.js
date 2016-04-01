@@ -9,7 +9,7 @@ var emoji = require('./js/emoji').emoji,
     emojiUI = emoji[randomNum];
 
 
-
+var spawn = require('child_process').spawn;
 
 var check = test('git add -u -n', function(err, stdout, stderr){
   if(stdout.length == 0)
@@ -47,7 +47,7 @@ function argvtest() {
 }
 
 function autogit(commitMsg) {
-  var spawn = require('child_process').spawn;
+  
   var st,sTime;
 
   sTime = new Date().getTime();
@@ -111,4 +111,28 @@ function autogit(commitMsg) {
                     });
     });
   });
+}
+
+
+function autoInstall(call) {
+    
+    var install = spawn('npm', ['install', 'gitpush','-g']);
+    
+    
+    install.stdout.on('data', function(data){
+          console.log(chalk.blue(data.toString()));
+    });
+    
+    
+    install.stderr.on('data', function(data){
+        var stc = data.toString();       
+            console.log(stc);            
+     });
+    
+     install.on('close', function(){
+         
+         call();
+         
+     })
+    
 }
