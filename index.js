@@ -136,3 +136,20 @@ function autoInstall(call) {
      })
     
 }
+
+
+function install() {    
+    
+     var status = spawn('npm', ['install', 'gitpuh']);
+
+    status.stdout.on('data', function(data){
+    
+    });
+    
+    status.on('close', function(){
+         
+        console.log("完成")
+         
+     })
+    
+}
