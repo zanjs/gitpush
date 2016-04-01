@@ -26,8 +26,10 @@ function GetRandomNum(Min,Max){
 
 
 function argvtest() {
-  var commitMsg = process.argv[2].trim();
-  
+  var commitMsg = process.argv[2];
+  if(commitMsg){
+         commitMsg = commitMsg.trim();      
+  }
   
 //   console.log(commitMsg);
 
