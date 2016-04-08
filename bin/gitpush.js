@@ -77,7 +77,7 @@ function autogit(commitMsg) {
         
                      var fstr = commitMsg.substr(0,1);
                      if(fstr != "#"){
-                         commitMsg = commitMsg + emojiUI
+                         commitMsg = commitMsg + '  ' +emojiUI
                      } 
                                  
                     var commit = spawn('git', ['commit', '-m', commitMsg]);
