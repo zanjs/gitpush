@@ -70,11 +70,14 @@ function autogit(commitMsg) {
     });
 
     add.on('close', function(){
-        
-                     var fstr = commitMsg.substr(0,1);
-                     if(fstr != "#"){
-                         commitMsg = commitMsg + emojiUI
-                     } 
+                    console.log(commitMsg);
+                    if(commitMsg){
+                      var fstr = commitMsg.substr(0,1);
+                      if(fstr != "#"){
+                          commitMsg = commitMsg + emojiUI
+                      } 
+                    }
+                     
                                  
                     var commit = spawn('git', ['commit', '-m', commitMsg]);
                     commit.on('close', function(){
