@@ -31,16 +31,6 @@ function argvtest() {
          commitMsg = commitMsg.trim();      
   }
   
-//   console.log(commitMsg);
-
-// var fstr = commitMsg.substr(0,1);
-//                      if(fstr != "#"){
-//                          commitMsg = commitMsg + emojiUI
-//                      } 
-//                      console.log(fstr);
-//                      console.log(commitMsg);
-
-//   return false;
   if(!commitMsg)
     commitMsg = commitUI;
  autogit(commitMsg);
