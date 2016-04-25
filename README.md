@@ -11,7 +11,7 @@ The command gives output of git status,
 followed by git add all new modified files, and then commits them.
 
 
-## commit show
+## commits show
 
 ![](./images/commit-show.png)
 
