@@ -75,7 +75,7 @@ function autogit(commitMsg) {
                                  
                     var commit = spawn('git', ['commit', '-m', commitMsg]);
                     commit.on('close', function(){
-                            console.log(chalk.green.bold('git commits ok \n 正在提交到远程仓库 \n loading push...'));
+                            console.log(chalk.green.bold('git commits ok? \n 正在提交到远程仓库 \n loading push...'));
 
                             var push = spawn('git', ['push']);
 
