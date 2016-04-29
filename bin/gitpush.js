@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 'use strict';
-
 var chalk = require('chalk');
 var test = require('child_process').exec;
 
@@ -35,16 +34,6 @@ function argvtest() {
          commitMsg = commitMsg.trim();      
   }
   
-//   console.log(commitMsg);
-
-// var fstr = commitMsg.substr(0,1);
-//                      if(fstr != "#"){
-//                          commitMsg = commitMsg + emojiUI
-//                      } 
-//                      console.log(fstr);
-//                      console.log(commitMsg);
-
-//   return false;
   if(!commitMsg)
     commitMsg = commitUI;
  autogit(commitMsg);
@@ -74,15 +63,22 @@ function autogit(commitMsg) {
     });
 
     add.on('close', function(){
-        
-                     var fstr = commitMsg.substr(0,1);
-                     if(fstr != "#"){
-                         commitMsg = commitMsg + '  ' +emojiUI
-                     } 
+                    console.log(commitMsg);
+                    commitMsg = commitMsg.toString();
+                    
+                  
+                    
+                    if(commitMsg.length >1){
+                      var fstr = commitMsg.substr(0,1);
+                      if(fstr != "#"){
+                          commitMsg = commitMsg + emojiUI
+                      } 
+                    }
+                     
                                  
                     var commit = spawn('git', ['commit', '-m', commitMsg]);
                     commit.on('close', function(){
-                            console.log(chalk.green.bold('git commit ok \n 正在提交到远程仓库 \n loading push...'));
+                            console.log(chalk.green.bold('git commits ok? \n 正在提交到远程仓库 \n loading push...'));
 
                             var push = spawn('git', ['push']);
 
