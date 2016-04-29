@@ -66,7 +66,7 @@ function autogit(commitMsg) {
                     console.log(commitMsg);
                     commitMsg = commitMsg.toString();
                     
-                  
+                  console.log(commitMsg + 's');
                     
                     if(commitMsg.length >1){
                       var fstr = commitMsg.substr(0,1);
