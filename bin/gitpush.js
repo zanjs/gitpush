@@ -64,11 +64,8 @@ function autogit(commitMsg) {
 
     add.on('close', function(){
                     console.log(commitMsg);
-                    commitMsg = commitMsg.toString();
-                    
-                  console.log(commitMsg + '');
-                    
-                    if(commitMsg.length >1){
+
+                    if(commitMsg){
                       var fstr = commitMsg.substr(0,1);
                       if(fstr != "#"){
                           commitMsg = commitMsg + emojiUI
