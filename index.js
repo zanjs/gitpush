@@ -63,7 +63,7 @@ function autogit(commitMsg) {
                     console.log(commitMsg);
                     commitMsg = commitMsg.toString();
                     
-                    console.log(commitMsg);
+                    console.log(commitMsg +'no');
                     
                     if(commitMsg.le){
                       var fstr = commitMsg.substr(0,1);
