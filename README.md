@@ -82,3 +82,7 @@ https://github.com/zanjs/gitpush/blob/master/up.md
 
 
 
+
+
+
+[travis-img]:https://travis-ci.org/zanjs/gitpush.svg?branch=master
