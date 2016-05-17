@@ -1,6 +1,7 @@
 # gitpush
 
 [![Build Status][travis-img]][travis]
+[![Version][version]
 
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自动化, commit 添加 emoji 表情
@@ -81,8 +82,6 @@ https://github.com/zanjs/gitpush/blob/master/up.md
 ### Donate
 
 
-
-
-
-[travis]:https://travis-ci.org/zanjs/gitpush/
+[version]: https://img.shields.io/npm/v/postcss-salad.svg
+[travis]:https://travis-ci.org/zanjs/gitpush
 [travis-img]:https://travis-ci.org/zanjs/gitpush.svg?branch=master
