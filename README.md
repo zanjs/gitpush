@@ -1,7 +1,7 @@
 # gitpush
 
 [![Build Status][travis-img]][travis]
-[![Version][version]]
+
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自动化, commit 添加 emoji 表情
 
