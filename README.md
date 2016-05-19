@@ -1,5 +1,7 @@
 # gitpush
 
+[![Join the chat at https://gitter.im/zanjs/gitpush](https://badges.gitter.im/zanjs/gitpush.svg)](https://gitter.im/zanjs/gitpush?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status][travis-img]][travis]
 [![Version][version]](https://github.com/zanjs/gitpush)
 
