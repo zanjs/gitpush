@@ -1,7 +1,28 @@
 # gitpush
 
-[![Build Status][travis-img]][travis]
-[![Version][version]](https://github.com/zanjs/gitpush)
+
+
+
+[![Gitter](https://badges.gitter.im/zanjs/gitpush.svg)](https://gitter.im/zanjs/gitpush?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+[![Coverage Status](https://coveralls.io/repos/github/zanjs/gitpush/badge.svg?branch=master)](https://coveralls.io/github/zanjs/gitpush?branch=master) 
+[![npm](https://img.shields.io/npm/dm/gitpush.svg?maxAge=2592000)](https://www.npmjs.com/package/gitpush) 
+[![npm](https://img.shields.io/npm/v/gitpush.svg?maxAge=3600)](https://www.npmjs.com/package/gitpush)
+
+Build
+
+[![Build Status](https://travis-ci.org/zanjs/gitpush.svg?branch=master)](https://travis-ci.org/zanjs/gitpush.js/) 
+[![devDependency Status][david-dev-image]][david-dev-url]
+
+
+[![NPMI][nodei-image]][nodei-url]
+
+
+[david-dev-url]: https://david-dm.org/zanjs/gitpush#info=devDependencies
+[david-dev-image]: https://david-dm.org/zanjs/gitpush/dev-status.svg
+[nodei-image]: https://nodei.co/npm/gitpush.png?downloads=true&downloadRank=true&stars=true
+[nodei-url]: https://www.npmjs.com/package/gitpush
+
 
 
 Git 命令行实用程序,将所有修改过的文件并提交它们。 git 自动化, commit 添加 emoji 表情
@@ -82,6 +103,6 @@ https://github.com/zanjs/gitpush/blob/master/up.md
 ### Donate
 
 
-[version]: https://img.shields.io/npm/v/postcss-salad.svg
+[version]: https://img.shields.io/npm/v/gitpush.svg
 [travis]:https://travis-ci.org/zanjs/gitpush
 [travis-img]:https://travis-ci.org/zanjs/gitpush.svg?branch=master
