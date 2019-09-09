@@ -11,7 +11,7 @@
 
 Build
 
-[![Build Status](https://travis-ci.org/zanjs/gitpush.svg?branch=master)](https://travis-ci.org/zanjs/gitpush.js/) 
+[![Build Status](https://travis-ci.org/zanjs/gitpush.svg?branch=master)](https://travis-ci.org/zanjs/gitpush.js/) [![Greenkeeper badge](https://badges.greenkeeper.io/zanjs/gitpush.svg)](https://greenkeeper.io/) 
 [![devDependency Status][david-dev-image]][david-dev-url]
 
 
